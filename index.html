@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      * {
+        /* outline: 1px solid black; */
+      }
+
+      body {
+        overflow-x: hidden;
+      }
+      .circle {
+        width: 1rem;
+        height: 1rem;
+      }
+
+      .logoText {
+        text-decoration: none;
+        mix-blend-mode: difference;
+      }
+
+      .section1Divs {
+        /* height: 100%;
+        width: 100%; */
+        background-color: gray;
+      }
+
+      /* a[class="btn btn-light"] {
+        position: absolute;
+        right: 0px;
+      } */
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <!-- <div class="container-fluid d-flex justify-content-between"> -->
+        <div
+          class="navbar-expand-lg navbar-brand d-flex justify-content-center align-items-center gap-2"
+        >
+          <div class="circle rounded-circle bg-success"></div>
+          <a href="#" class="logoText fw-bold">Emmanuel Parreño</a>
+        </div>
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navElement"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- </div> -->
+
+        <!-- <div class=""> -->
+        <div
+          class="collapse navbar-collapse position-relative justify-content-between"
+          id="navElement"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="#" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">About me</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Works</a>
+            </li>
+            <li class="nav-item">
+              <span class="nav-underline"></span>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="#" class="btn btn-dark">Contact Me</a>
+            </li>
+          </ul>
+        </div>
+        <!-- </div> -->
+      </div>
+    </nav>
+
+    <main class="container-fluid">
+      <div class="section1 vh-100 bg-danger">
+        <div class="container-fluid">
+          <div class="row min-vh-100">
+            <div class="section1Divs col-4">one</div>
+            <div class="section1Divs col-4">two</div>
+            <div class="section1Divs col-4">three</div>
+          </div>
+          <div class="row">
+            <div class="section1Divs col-4">one</div>
+            <div class="section1Divs col-4">two</div>
+            <div class="section1Divs col-4">three</div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <section class="section1 min-vh-100 bg-dark"></section>
+  </body>
+</html>
