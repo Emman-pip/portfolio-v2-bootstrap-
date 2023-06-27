@@ -1,0 +1,45 @@
+body {
+  overflow-x: hidden;
+}
+.circle {
+  width: 1rem;
+  height: 1rem;
+}
+
+.logoText {
+  text-decoration: none;
+}
+
+.mainImg {
+  left: 0;
+  top: 0;
+  z-index: 0;
+  height: 90vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-image: url("./subtle-prism.svg");
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+}
+
+.break {
+  padding: 8vh 4vh;
+}
+
+.secondSection {
+  width: 100%;
+  padding: 1rem;
+}
+
+/* div[class^="col"] {
+  outline: 1px solid red;
+} */
+
+.abtMeText {
+  text-align: justify;
+}
+
+.abtMePics {
+}

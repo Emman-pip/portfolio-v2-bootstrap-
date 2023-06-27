@@ -12,6 +12,8 @@
       crossorigin="anonymous"
     />
 
+    <link rel="stylesheet" href="./style.css" />
+
     <script
       defer
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
@@ -20,29 +22,6 @@
     ></script>
 
     <style>
-      * {
-        /* outline: 1px solid black; */
-      }
-
-      body {
-        overflow-x: hidden;
-      }
-      .circle {
-        width: 1rem;
-        height: 1rem;
-      }
-
-      .logoText {
-        text-decoration: none;
-        mix-blend-mode: difference;
-      }
-
-      .section1Divs {
-        /* height: 100%;
-        width: 100%; */
-        background-color: gray;
-      }
-
       /* a[class="btn btn-light"] {
         position: absolute;
         right: 0px;
@@ -50,14 +29,21 @@
     </style>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid bg-dark-subtle d-flex justify-content-around">
+      <div>09x-xxxx-xxxx</div>
+      <div>serving since 2003</div>
+      <div>random bit</div>
+    </div>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark position-sticky top-0"
+    >
       <div class="container-fluid">
         <!-- <div class="container-fluid d-flex justify-content-between"> -->
         <div
           class="navbar-expand-lg navbar-brand d-flex justify-content-center align-items-center gap-2"
         >
           <div class="circle rounded-circle bg-success"></div>
-          <a href="#" class="logoText fw-bold">Emmanuel Parreño</a>
+          <a href="#" class="logoText fw-bold text-light">Emmanuel Parreño</a>
         </div>
         <button
           class="navbar-toggler"
@@ -89,7 +75,7 @@
           </ul>
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a href="#" class="btn btn-dark">Contact Me</a>
+              <a href="#" class="btn btn-light">Contact Me</a>
             </li>
           </ul>
         </div>
@@ -97,23 +83,72 @@
       </div>
     </nav>
 
-    <main class="container-fluid">
-      <div class="section1 vh-100 bg-danger">
-        <div class="container-fluid">
-          <div class="row min-vh-100">
-            <div class="section1Divs col-4">one</div>
-            <div class="section1Divs col-4">two</div>
-            <div class="section1Divs col-4">three</div>
+    <main class="container-fluid g-0">
+      <div class="mainImg row container-fluid bg-light g-0">
+        <h1 class="display-1 col-12 text-light text-center">
+          HAHA Antanga ko :)
+        </h1>
+      </div>
+
+      <div class="container-fluid g-0">
+        <div class="row bg-dark w-100 g-0">
+          <div class="break col-12 text-light display-5 text-center">
+            ABOUT ME
           </div>
-          <div class="row">
-            <div class="section1Divs col-4">one</div>
-            <div class="section1Divs col-4">two</div>
-            <div class="section1Divs col-4">three</div>
+        </div>
+      </div>
+
+      <div class="container-fluid g-0">
+        <div class="row g-0">
+          <div class="col-12">
+            <div class="secondSection container-lg">
+              <div class="row h-100">
+                <div class="col-12 col-xl-4 col-md-12 col-sm-12">
+                  <h3 class="display-3 fw-bolder">Hi there.</h3>
+                  <p class="abtMeText fs-5 fw-light">
+                    I am Emmanuel Parreño, an aspiring
+                    <span class="fw-bold">web developer</span>. I primarily work
+                    with HTML, CSS, Bootstrap, Javascript, and Webpack. I am
+                    currently looking for
+                    <span class="fw-bold">internships</span> and
+                    <span class="fw-bold">freelancing jobs</span>
+                    for the purpose of using my skills in real life.
+                  </p>
+                </div>
+                <div
+                  class="abtMePics col-12 col-xl-8 col-lg-12 col-md-12 col-sm-12"
+                >
+                  <div class="row h-100">
+                    <div class="col-sm-4 col-12 d-flex align-items-center">
+                      <img
+                        src="./random photo.jpg"
+                        alt="first pic"
+                        class="img-fluid rounded-4 my-1"
+                      />
+                    </div>
+                    <div class="col-sm-4 col-12 d-flex align-items-center">
+                      <img
+                        src="./random photo.jpg"
+                        alt="first pic"
+                        class="img-fluid rounded-4 my-1"
+                      />
+                    </div>
+                    <div class="col-sm-4 col-12 d-flex align-items-center">
+                      <img
+                        src="./random photo.jpg"
+                        alt="first pic"
+                        class="img-fluid rounded-4 my-1"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </main>
 
-    <section class="section1 min-vh-100 bg-dark"></section>
+    <!-- <section class="section1 min-vh-100 bg-dark"></section> -->
   </body>
 </html>
