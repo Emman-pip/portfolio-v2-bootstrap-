@@ -6,9 +6,9 @@
     <title>Document</title>
 
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
 
@@ -21,13 +21,14 @@
     </style>
   </head>
   <body>
-    <div class="container-fluid bg-dark-subtle d-flex justify-content-around">
+    <div class="slimTop container-fluid d-flex justify-content-around">
       <div>09x-xxxx-xxxx</div>
       <div>serving since 2003</div>
       <div>random bit</div>
     </div>
     <nav
-      class="navbar navbar-expand-lg navbar-dark bg-dark position-sticky top-0"
+      class="navbar navbar-expand-lg position-sticky p-2 navbar-dark"
+      style="top: 0; z-index: 1"
     >
       <div class="container-fluid">
         <!-- <div class="container-fluid d-flex justify-content-between"> -->
@@ -35,7 +36,7 @@
           class="navbar-expand-lg navbar-brand d-flex justify-content-center align-items-center gap-2"
         >
           <div class="circle rounded-circle bg-success"></div>
-          <a href="#" class="logoText fw-bold text-light">Emmanuel Parreño</a>
+          <div href="#" class="logoText fw-bold ml-1">Emmanuel Parreño</div>
         </div>
         <button
           class="navbar-toggler"
@@ -52,22 +53,22 @@
           id="navElement"
         >
           <ul class="navbar-nav">
-            <li class="nav-item">
-              <a href="#" class="nav-link active">Home</a>
+            <li class="nav-item active">
+              <a href="#" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">About me</a>
+              <a href="#AboutMe" class="nav-link">About me</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">Works</a>
+              <a href="#Works" class="nav-link">Works</a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <span class="nav-underline"></span>
-            </li>
+            </li> -->
           </ul>
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a href="#" class="btn btn-light">Contact Me</a>
+              <a href="#" class="btn">Contact Me</a>
             </li>
           </ul>
         </div>
@@ -76,61 +77,53 @@
     </nav>
 
     <main class="container-fluid g-0">
-      <div class="mainImg row container-fluid bg-light g-0">
-        <h1 class="display-1 col-12 text-light text-center">
-          HAHA Antanga ko :)
+      <div class="mainImg row container-fluid g-0">
+        <h1 class="display-2 col-12 text-center">
+          <span class="fs-1">Hello, I am </span
+          ><span class="fw-normal">Emmanuel</span>
         </h1>
       </div>
 
-      <div class="container-fluid g-0">
-        <div class="row bg-dark w-100 g-0">
-          <div class="break col-12 text-light display-5 text-center">
-            ABOUT ME
+      <div class="section2 container-fluid g-0">
+        <div class="break container-fluid g-0" id="AboutMe">
+          <div class="w-100 g-0 d-flex">
+            <div class="breakText col-12 p-5 pb-2 display-5">ABOUT ME</div>
           </div>
         </div>
-      </div>
 
-      <div class="container-fluid g-0">
-        <div class="row g-0">
-          <div class="col-12">
-            <div class="secondSection container-lg">
-              <div class="row h-100">
-                <div class="col-12 col-xl-4 col-md-12 col-sm-12">
-                  <h3 class="display-3 fw-bolder">Hi there.</h3>
-                  <p class="abtMeText fs-5 fw-light">
-                    I am Emmanuel Parreño, an aspiring
-                    <span class="fw-bold">web developer</span>. I primarily work
-                    with HTML, CSS, Bootstrap, Javascript, and Webpack. I am
-                    currently looking for
-                    <span class="fw-bold">internships</span> and
-                    <span class="fw-bold">freelancing jobs</span>
-                    for the purpose of using my skills in real life.
-                  </p>
-                </div>
-                <div
-                  class="abtMePics col-12 col-xl-8 col-lg-12 col-md-12 col-sm-12"
-                >
-                  <div class="row h-100">
-                    <div class="col-sm-4 col-12 d-flex align-items-center">
-                      <img
-                        src="./random photo.jpg"
-                        alt="first pic"
-                        class="img-fluid rounded-4 my-1"
-                      />
+        <div class="container-fluid g-0">
+          <div class="row g-0">
+            <div class="col-12">
+              <div class="secondSection container-lg">
+                <div class="row h-100">
+                  <div
+                    class="col-12 col-xl-4 col-md-12 col-sm-12 d-flex align-items-center"
+                  >
+                    <div>
+                      <h3 class="display-3 fw-bolder">Hi there.</h3>
+                      <p class="abtMeText fs-5 fw-light">
+                        I am Emmanuel Parreño, an aspiring
+                        <span class="fw-bold">web developer</span>. I primarily
+                        work with HTML, CSS, Bootstrap, Javascript, and Webpack.
+                        I am currently looking for
+                        <span class="fw-bold">internships</span> and
+                        <span class="fw-bold">freelancing jobs</span>
+                        for the purpose of using my skills in real life.
+                      </p>
                     </div>
-                    <div class="col-sm-4 col-12 d-flex align-items-center">
-                      <img
-                        src="./random photo.jpg"
-                        alt="first pic"
-                        class="img-fluid rounded-4 my-1"
-                      />
-                    </div>
-                    <div class="col-sm-4 col-12 d-flex align-items-center">
-                      <img
-                        src="./random photo.jpg"
-                        alt="first pic"
-                        class="img-fluid rounded-4 my-1"
-                      />
+                  </div>
+                  <div
+                    class="abtMePics col-12 col-xl-8 col-lg-12 col-md-12 col-sm-12"
+                  >
+                    <div class="container">
+                      <div class="row">
+                        <div class="col g-0">
+                          <div
+                            class="bg-dark rounded-3"
+                            style="width: 100%; height: 30rem"
+                          ></div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -139,23 +132,100 @@
           </div>
         </div>
       </div>
+
+      <div class="works container-fluid" id="Works">
+        <div>
+          <h1 class="worksText p-5 mt-5 display-5">My Works</h1>
+
+          <!--  -->
+
+          <div class="worksSlider container g-0 rounded-3">
+            <div class="row g-3">
+              <!-- <ul class="">
+            
+            </ul> -->
+              <div class="col-md-8 col-12">
+                <div id="slides" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button
+                      type="button"
+                      data-bs-target="#slides"
+                      data-bs-slide-to="0"
+                      class="active"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#slides"
+                      data-bs-slide-to="1"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#slides"
+                      data-bs-slide-to="2"
+                    ></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                        src="./random photo.jpg"
+                        alt="work 1"
+                        class="d-block img-fluid"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="./random photo.jpg"
+                        alt="work 2"
+                        class="d-block img-fluid"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="./random photo.jpg"
+                        alt="work 3"
+                        class="d-block img-fluid"
+                      />
+                    </div>
+                  </div>
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#slides"
+                    data-bs-slide="prev"
+                  >
+                    <span class="carousel-control-prev-icon"></span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#slides"
+                    data-bs-slide="next"
+                  >
+                    <span class="carousel-control-next-icon"></span>
+                  </button>
+                </div>
+              </div>
+              <div class="worksDescription col-md-4 col-12">
+                <div class="display-6">Here are some of my works</div>
+                <div class="lead">
+                  These are a few of my recent works. I am currently working
+                  with my design-related skills and other Javascript stuff
+                  (APIs, databases, and back-end).
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div id="Slider" class="carousel slide"></div> -->
+        </div>
+      </div>
     </main>
 
     <!-- <section class="section1 min-vh-100 bg-dark"></section> -->
     <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
+    <script src="script.js"></script>
   </body>
 </html>
