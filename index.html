@@ -57,13 +57,13 @@
         >
           <ul class="navbar-nav text-center">
             <li class="nav-item active">
-              <a href="#" class="nav-link">Home</a>
+              <a href="#" class="nav-link underline">Home</a>
             </li>
             <li class="nav-item">
-              <a href="#AboutMe" class="nav-link">About me</a>
+              <a href="#AboutMe" class="nav-link underline">About me</a>
             </li>
             <li class="nav-item">
-              <a href="#Works" class="nav-link">Works</a>
+              <a href="#Works" class="nav-link underline">Works</a>
             </li>
             <!-- <li class="nav-item">
               <span class="nav-underline"></span>
@@ -78,6 +78,18 @@
         <!-- </div> -->
       </div>
     </nav>
+
+    <div type="button" class="meOnBackground">
+      <img
+        src="./me.png"
+        alt="me"
+        class="meOnBackground img-fluid"
+        data-bs-container="body"
+        data-bs-toggle="popover"
+        data-bs-placement="top"
+        data-bs-content="Hey, why'd you click?"
+      />
+    </div>
 
     <main class="container-fluid g-0">
       <!--  -->
@@ -102,7 +114,9 @@
             </div>
           </div>
           <!--  -->
-          <div class="display-1 col-lg-7 col-12">Emmanuel</div>
+          <div class="col-lg-7 col-12">
+            <div class="name display-1">Emmanuel</div>
+          </div>
         </div>
 
         <!-- <h1 class="display-2 col-12 text-center">
