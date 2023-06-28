@@ -181,6 +181,11 @@ p {
   font-family: Raj-medium;
 }
 
+.display-1 {
+  font-family: Raj-bold;
+  color: var(--white);
+}
+
 .nav-link:hover {
   color: rgb(164, 147, 147);
 }
@@ -212,4 +217,8 @@ form,
 input {
   background-color: var(--white);
   border-radius: 5px;
+}
+
+.greeting {
+  color: var(--white);
 }
