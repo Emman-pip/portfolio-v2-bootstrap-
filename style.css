@@ -1,4 +1,5 @@
-body {
+body,
+html {
   overflow-x: hidden;
 }
 
@@ -93,9 +94,9 @@ nav {
   padding: 1rem;
 }
 
-/* div[class^="col"] {
-  outline: 1px solid red;
-} */
+* {
+  /* outline: 1px solid red; */
+}
 
 #AboutMe {
   position: sticky;
@@ -103,6 +104,30 @@ nav {
 }
 .abtMeText {
   text-align: justify;
+}
+
+.abtMePics {
+  position: relative;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #ffe4e538);
+  backdrop-filter: blur(3px);
+  /* url("./subtle-prism.svg"), */
+  /* linear-gradient(to bottom, var(--white), transparent, var(--main-black)); */
+  background-attachment: fixed;
+  text-shadow: 1rem 1rem rgba(0, 0, 0, 0.033);
+}
+
+.abtMeParag {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.abtmeImage {
+  /* width: 10rem; */
+  mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), black);
+  -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), black);
 }
 
 .container-fluid {
